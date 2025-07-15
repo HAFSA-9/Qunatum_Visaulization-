@@ -1,0 +1,21 @@
+import numpy as np
+import matplotlib.pyplot as plt
+
+# Set up the x-axis
+x = np.linspace(0, 4 * np.pi, 1000)
+k = 1  # wave number
+
+# Real and imaginary parts
+real_part = np.cos(k * x)
+imag_part = np.sin(k * x)
+
+# Plotting
+plt.figure(figsize=(10, 4))
+plt.plot(x, real_part, label='Re[ψ(x)] = cos(kx)')
+plt.plot(x, imag_part, label='Im[ψ(x)] = sin(kx)', linestyle='--')
+plt.title("Real and Imaginary Parts of Plane Wave ψ(x) = e^{ikx}")
+plt.xlabel("x")
+plt.ylabel("Amplitude")
+plt.grid(True)
+plt.legend()
+plt.show()
