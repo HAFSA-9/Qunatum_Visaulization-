@@ -1,7 +1,7 @@
 # Qunatum_Visaulization-
 This code aims to help you visualize quantum mechanics.
 
-**Travelling wave: **
+Travelling wave: 
 
 This notebook visualizes the **real** and **imaginary** parts of a basic quantum **plane wave**:
 
